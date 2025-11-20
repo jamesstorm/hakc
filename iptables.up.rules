@@ -1,0 +1,6 @@
+*nat
+-A POSTROUTING -o tailscale0 -j MASQUERADE
+COMMIT
+*filter
+:FORWARD ACCEPT [0:0]
+COMMIT
